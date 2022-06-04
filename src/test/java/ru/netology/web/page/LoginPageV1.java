@@ -11,6 +11,6 @@ public class LoginPageV1 {
         $("[data-test-id=login] input").setValue(info.getLogin());
         $("[data-test-id=password] input").setValue(info.getPassword());
         $("[data-test-action=login] input").click();
-        return new VerificationPage();      //чейнинг - ожидаем что откроется другая страница, страница верификации
+        return new VerificationPage();      //чейнинг - создание цепочки страниц, т.е. ожидаем что откроется другая страница, страница верификации
     }
 }
